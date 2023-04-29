@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellular Automata</title>
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="bundle.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <h1>2D Map Generator</h1>
+        <div id="settings-map-container">
+            <div id="map">
+                <canvas></canvas>
+            </div>
+            <div id="download-button-container">
+                <div id="settings">
+                    <div class="setting-item" id="seed">
+                        <span>SEED</span>
+                        <input type="text" name="seed" value="asdf">
+                    </div>
+                    <div class="setting-item" id="resolution">
+                        <span>SIZE</span>
+                        <input type="radio" name="size" id="small" />
+                        <label for="small">128</label>
+                        <input type="radio" name="size" id="medium" />
+                        <label for="medium">256</label>
+                        <input type="radio" name="size" id="large" />
+                        <label for="large">512</label>
+                    </div>
+                </div>
+                <button id="download-button">Download</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
